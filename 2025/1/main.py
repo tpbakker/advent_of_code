@@ -1,10 +1,10 @@
 with open("example.txt","r") as file:
-    example = file.read()
+    example1 = file.read()
 
 with open("input.txt","r") as file:
-    input = file.read()
+    input1 = file.read()
 
-moves = input
+moves = input1.split("\n")
 dial = 50
 answer_a = 0
 answer_b = 0
@@ -27,5 +27,6 @@ for rotation in moves:
 
 print(f"Answer A is: {answer_a}")
 print(f"Answer B is: {answer_b}")
+
 
 
