@@ -4,7 +4,7 @@ with open("example.txt","r") as file:
 with open("input.txt","r") as file:
     input3 = file.read()
 
-def get_largest(input_list, min_remaining):
+def get_largest_number(input_list, min_remaining):
     descending = sorted(input_list, reverse=True)
     remaining_nrs = []
     largest_nr = 0
@@ -22,8 +22,8 @@ def get_largest(input_list, min_remaining):
 def get_joltage(bank, length):
     joltage = ""
     for n in reversed(range(length)):
-        largest_nr = get_largest(bank, n)["largest_number"]
-        bank = get_largest(bank, n)["remaining"]
+        largest_nr = get_largest_number(bank, n)["largest_number"]
+        bank = get_largest_number(bank, n)["remaining"]
         joltage += str(largest_nr)
     return joltage
 
