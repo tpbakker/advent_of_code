@@ -1,10 +1,10 @@
 with open("example.txt","r") as file:
-    example_day_2 = file.read()
+    example = file.read()
 
 with open("input.txt","r") as file:
-    input_day_2 = file.read()
+    input = file.read()
 
-id_ranges = input_day_2.split(",")
+id_ranges = input.split(",")
 invalid_ids_a = []
 invalid_ids_b = []
 max_length = 0
@@ -32,4 +32,5 @@ answer_a = sum(invalid_ids_a)
 answer_b = sum(invalid_ids_b)
 
 print(f"Answer A is: {answer_a}")
+
 print(f"Answer B is: {answer_b}")
