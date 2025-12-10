@@ -27,7 +27,6 @@ def calculate_problem(index, a_or_b):
         for x in range(1, len(numbers_b[index])):
             if numbers_b[index][x] != "":
                 calculation += f"{modifiers_b[index]} {numbers_b[index][x]}"
-        print(f"{calculation} = {eval(calculation)}")
         return eval(calculation)
 
     else:
